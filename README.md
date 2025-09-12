@@ -6,3 +6,5 @@ You will notice some things need to be updated in this code. It was originally m
 
 
 Francisco Figueiredo - 68087
+Tomás Alves - 68681
+Miguel Carmo - 65871
