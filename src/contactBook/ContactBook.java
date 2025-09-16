@@ -105,4 +105,17 @@ public class ContactBook {
         }
         throw new NoSuchElementException();
     }
+
+    public boolean hasEqualContacts() {
+        for (int i=0; i < counter; i++) {
+            Contact mainContact = contacts[i];
+            initializeIterator();
+            while (hasNext()) {
+                Contact nextContact = next();
+                if (mainContact != nextContact && mainContact.getPhone() == nextContact.getPhone()) return true;
+            }
+        }
+        return false;
+    }
+
 }
