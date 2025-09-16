@@ -93,4 +93,16 @@ public class ContactBook {
         return contacts[currentContact++];
     }
 
+    public boolean hasEqualContacts() {
+        for (int i=0; i < counter; i++) {
+            Contact mainContact = contacts[i];
+            initializeIterator();
+            while (hasNext()) {
+                Contact nextContact = next();
+                if (mainContact != nextContact && mainContact.getPhone() == nextContact.getPhone()) return true;
+            }
+        }
+        return false;
+    }
+
 }
