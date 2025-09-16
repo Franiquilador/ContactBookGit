@@ -2,6 +2,8 @@ package contactBook;
 
 import contactBook.Contact;
 
+import java.util.NoSuchElementException;
+
 public class ContactBook {
     static final int DEFAULT_SIZE = 100;
 
@@ -93,4 +95,14 @@ public class ContactBook {
         return contacts[currentContact++];
     }
 
+    public Contact getContact(int phone) throws NoSuchElementException {
+        int i = 0;
+        while (i < counter) {
+            if (contacts[i].getPhone() == phone) {
+                return contacts[i];
+            }
+            i++;
+        }
+        throw new NoSuchElementException();
+    }
 }
