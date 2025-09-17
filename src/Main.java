@@ -27,7 +27,7 @@ public class Main {
     public static final String QUIT_MSG = "Goodbye!";
     public static final String COMMAND_ERROR = "Unknown command.";
     private static final String CONTACT_NOT_EQUALS = "All contacts have different phone numbers.";
-    private static final String CONTACT_EQUALS = "There are contacts that share phone numbers.";
+    private static final String CONTACT_EQUALS = "There are contacts that share phone numbers.";
 
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
